@@ -1,0 +1,113 @@
+{
+  "v": 6,
+  "name": "Soham",
+  "folders": [],
+  "requests": [
+    {
+      "v": "11",
+      "name": "get posts",
+      "method": "GET",
+      "endpoint": "http://localhost:8080/api/posts?page=1",
+      "params": [],
+      "headers": [],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "get posts by id",
+      "method": "GET",
+      "endpoint": "http://localhost:8080/api/posts/07f83369-c3c1-4483-af2a-8dd6d39bb4d7",
+      "params": [],
+      "headers": [],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "post post",
+      "method": "POST",
+      "endpoint": "http://localhost:8080/api/posts",
+      "params": [],
+      "headers": [],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": "application/json",
+        "body": "{\n  \"title\": \"new post\",\n  \"description\": \"cool post\",\n  \"author\": \"soham\"\n}\n"
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "update post",
+      "method": "PUT",
+      "endpoint": "http://localhost:8080/api/posts/07f83369-c3c1-4483-af2a-8dd6d39bb4d7",
+      "params": [],
+      "headers": [],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": "application/json",
+        "body": "{\n  \"author\": \"soham\"\n}\n"
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "delete post",
+      "method": "DELETE",
+      "endpoint": "http://localhost:8080/api/posts/07f83369-c3c1-4483-af2a-8dd6d39bb4d7",
+      "params": [],
+      "headers": [],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    }
+  ],
+  "auth": {
+    "authType": "none",
+    "authActive": true
+  },
+  "headers": [],
+  "_ref_id": "coll_m73bgfyj_36795ccb-a9e7-4904-b03b-bdb27e784f0b"
+}

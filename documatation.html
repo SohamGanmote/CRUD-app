@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API Documentation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+
+    h1,
+    h2 {
+      color: #333;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .endpoint {
+      margin-bottom: 20px;
+      padding: 10px;
+      border-left: 5px solid #007BFF;
+      background: #eef4ff;
+    }
+
+    code {
+      background: #ddd;
+      padding: 2px 5px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>API Documentation</h1>
+    <p><strong>Note:</strong> You can import <code>hoppscotch.json</code> into <a href="https://hoppscotch.io/"
+        target="_blank">Hoppscotch</a> to test the APIs directly.</p>
+
+    <div class="endpoint">
+      <h2>Get All Posts (Paginated)</h2>
+      <p><strong>Method:</strong> GET</p>
+      <p><strong>Endpoint:</strong> <code>/api/posts?page=1&limit=10</code></p>
+      <p><strong>Query Parameters:</strong></p>
+      <ul>
+        <li><code>page</code> (integer) - The page number (default: 1)</li>
+        <li><code>limit</code> (integer) - Number of posts per page (default: 10)</li>
+      </ul>
+    </div>
+
+    <div class="endpoint">
+      <h2>Get Post by ID</h2>
+      <p><strong>Method:</strong> GET</p>
+      <p><strong>Endpoint:</strong> <code>/api/posts/:post_id</code></p>
+    </div>
+
+    <div class="endpoint">
+      <h2>Create a Post</h2>
+      <p><strong>Method:</strong> POST</p>
+      <p><strong>Endpoint:</strong> <code>/api/posts</code></p>
+      <p><strong>Body:</strong> JSON</p>
+      <pre>{ "title": "new post", "description": "cool post", "author": "soham" }</pre>
+    </div>
+
+    <div class="endpoint">
+      <h2>Update a Post</h2>
+      <p><strong>Method:</strong> PUT</p>
+      <p><strong>Endpoint:</strong> <code>/api/posts/:post_id</code></p>
+      <p><strong>Body:</strong> JSON</p>
+      <pre>{ "author": "soham" }</pre>
+    </div>
+
+    <div class="endpoint">
+      <h2>Delete a Post</h2>
+      <p><strong>Method:</strong> DELETE</p>
+      <p><strong>Endpoint:</strong> <code>/api/posts/:post_id</code></p>
+    </div>
+  </div>
+</body>
+
+</html>
