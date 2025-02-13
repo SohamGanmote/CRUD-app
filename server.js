@@ -16,6 +16,6 @@ app.use("/api", router);
 app.use(URLnotFoundHandler);
 app.use(errorHandler);
 
-app.listen(port, () => {
+app.listen(port, "0.0.0.0", () => {
 	console.log(`Server started on port ${port}.`);
 });

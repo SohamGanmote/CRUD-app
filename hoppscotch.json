@@ -67,7 +67,7 @@
       "v": "11",
       "name": "update post",
       "method": "PUT",
-      "endpoint": "http://localhost:8080/api/posts/07f83369-c3c1-4483-af2a-8dd6d39bb4d7",
+      "endpoint": "http://localhost:8080e/api/posts/07f83369-c3c1-4483-af2a-8dd6d39bb4d7",
       "params": [],
       "headers": [],
       "preRequestScript": "",
